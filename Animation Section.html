@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation Section</title>
+
+  <!-- CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+  <!-- Custom CSS -->
+
+  <style>
+    /* Custom styles */
+    .portfolio-section {
+      text-align: center;
+      margin-bottom: 30px;
+      position: relative;
+    }
+    .section-title {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+    .section-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .project-video {
+      width: 50%;
+      max-width: 600px;
+    }
+    .project-text {
+      width: 50%;
+      max-width: 400px;
+      margin-left: 50px; /* Adjust spacing between video and text */
+    }
+    .project-text p {
+        text-align: left;
+    }
+    .collapsible-button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+      border-radius: 20px;
+    }
+    .project-images {
+      overflow-x: auto;
+      overflow-y: auto; /* Enable vertical scrolling */
+      white-space: nowrap;
+      margin-top: 20px;
+      max-width: 73%; /* Set maximum width */
+      margin-left: auto;
+      margin-right: auto;
+      padding: 50px; /* Ensure content exceeds container height for vertical scrolling */
+    }
+    .project-images img {
+      height: 200px;
+      transition: transform 0.3s ease;
+      margin: 5px;
+    }
+    .project-images img:hover {
+      transform: scale(1.5);
+      position: relative;
+      z-index: 1;
+    }
+    .static-images {
+      overflow-x: auto;
+      overflow-y: auto; /* Enable vertical scrolling */
+      white-space: nowrap;
+      margin-top: 20px;
+      max-width: 73%; /* Set maximum width */
+      margin-left: auto;
+      margin-right: auto;
+      padding: 50px; /* Ensure content exceeds container height for vertical scrolling */
+    }
+    .static-images img {
+      height: 200px;
+      margin: 5px;
+    }
+
+    .container-center-text {
+      max-width: 50%;
+      margin: 0 auto;
+      padding: 0px;
+      text-align: center;
+    }
+    .button-center-text {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    bottom: 20px; /* Adjust the vertical position as needed */
+    transform: translateX(-50%);
+    }
+
+    
+    
+    .collapsible-container {
+      display: none;
+    }
+    .img-lunga{
+        width: 80%;
+    }
+    .logo-navbar{
+    width: 40px;
+    }
+    .divisore-gradient-text-small{
+    width: 100%;
+    margin-top: 80;
+    margin-bottom: 80px;
+    padding: 10px;
+    text-align: center;
+    color: var(--color1);
+    padding-bottom: 10px;
+    background: linear-gradient(to right, #0266EE,#b950ee, #1cb3f3 )
+    }
+    .divisore{
+      padding: 20px;
+    }
+    
+    
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container" >
+        <a class="navbar-brand" href="martina_chat.html"> <img class="logo-navbar" src="img/logo ml.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Design Section.html">Design</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Animation Section.html">Animation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- copertina animazione -->
+<div class="box"> 
+    <img src="img/animation-copertina.png" alt="qua ci va una foto per la copert di animation" width="100%" height="auto">
+</div>
+
+<div class="divisore"></div>
+<!-- lavori animazione -->
+
+<!-- il sogno -->
+<div class="portfolio-section">
+  <div class="section-content">
+    <video class="project-video" controls>
+      <source src="img/ilsogno/2022-23_FILIERA_2_GRUPPO_07(titoli nuovi).mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="project-text">
+    <h2 class="section-title">Il sogno </h2>
+      <p> <br>In un salotto silenzioso, una piccola perla cerca di scappare dalla monotonia della sua vita attraverso il ricordo di un passato felice.
+        Presto però il suo sogno però si scontrerà con la dura realtà. <br>Questo cortometraggio ispirato all'opera omonima di Picasso
+        vuole spiegare la composizione del quadro stesso in modo creativo, attraverso la storia di un personaggio apparentemente secondario.</p>
+        <button class="collapsible-button" onclick="toggleCollapsible('collapsibleContent1')">Altro</button>
+      </div>
+</div>
+<div class="collapsible-container" id="collapsibleContent1">
+  <div class="collapsible-content">
+  <div class="project-images" id="images">
+      <img src="img/ilsogno/sogno-1.png" alt="Image 2">
+      <img src="img/ilsogno/sogno-2.png" alt="Image 2">
+      <img src="img/ilsogno/sogno-4.png" alt="Image 3">
+      <img src="img/ilsogno/sogno-6.png" alt="Image 3">
+      <img src="img/ilsogno/sogno-7.png" alt="Image 1">
+      <img src="img/ilsogno/sogno-8.png" alt="Image 1">
+
+    </div>
+    <div class="container-center-text">
+        <p>In una stanza soleggiata, una donna dormiva profondamente sulla poltrona. Al suo collo una collana di perle che si muoveva al ritmo del suo respiro, ma solo un occhio più attento poteva notare qualcosa di strano nel gioiello.
+            Una delle perle, troppo stretta tra le sue sorelle, si guardava attorno con curiosità sognando di uscire da quella prigione. <br>Ad un tratto vide di fronte a sé un ricordo, un sogno che sembrava perduto: la sua casa. <br>Iniziò a tirare, sempre più forte, finché la collana si ruppe e tutte le perle volarono nella stanza. Con grandi salti la coraggiosa perla si avvicinò sempre di più alla metà, fino a quando BAM si scontrò con il quadro appeso al muro.
+            La perla cadde a terra, le sue convinzioni crollarono, e la donna che ormai si era svegliata la raccolse per rimetterla al suo posto nella collana.</p>
+    </div>
+    <div class="divisore"></div>
+
+    <h2 class="section-title">Storyboard</h2>
+    <img class="img-lunga" src="img/ilsogno/sogno-storyboard.png" alt="Image">
+
+    <div class="divisore"></div>
+    <div class="container-center-text">
+      <p>Per aggiungere un tocco di magia alla campagna, tutte le immagini utilizzate sono state generate dall'Intelligenza Artificiale e post-prodotte per incarnare al meglio l'essenza delle infinite possibilità che offre la tecnologia. </p>
+    </div>
+    <div class="project-images" id="images">
+      <img src="img/ilsogno/sogno-sschema-personaggio.png" alt="Image 2">
+       </div>
+       <div class="container-center-text ">
+        <p style="color:dimgray; margin-top: 20px;"> 
+        Progetto realizzato da: <br>
+        Anna Gallucci, Francesca Ibba, Valentina Leli, Martina Limata, Silvia Lo Presti.
+    </p>
+    </div>
+       <button class="collapsible-button" onclick="closeCollapsible('collapsibleContent1')">Chiudi</button>     
+  </div>
+</div>
+</div>
+
+<div class="divisore-gradient-text-small"></div>
+
+<!-- il caffè di notte -->
+<div class="portfolio-section">
+  <div class="section-content">
+    <video class="project-video" controls>
+      <source src="img/Il caffè di notte/gruppo16-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="project-text">
+    <h2 class="section-title">Il caffè di notte </h2>
+      <p> <br>Il cyberbullismo su social network e web costituisce oltre un terzo degli episodi totali di
+        bullismo nel mondo, con conseguente pressione psicologica più invasiva, mortificante e virale rispetto alle forma più tradizionale.
+        Questa statistica viene tristemente raccontata tramite il paragone tra una partita di biliardo e la vita di un giovane vittima di bullismo.
+        Si racconta così come numerosi “piccoli” avvenimenti possono portare a conseguenze disastrose, come tante palle in buca.</p>
+        <button class="collapsible-button" onclick="toggleCollapsible('collapsibleContent2')"> Altro</button>
+      </div>
+</div>
+<div class="collapsible-container" id="collapsibleContent2">
+  <div class="collapsible-content">
+  <div class="project-images" id="images">
+      <img src="img/Il caffè di notte/Screenshot 2024-04-08 alle 17.54.43.png" alt="Image 2">
+      <img src="img/Il caffè di notte/Screenshot 2024-04-08 alle 17.54.57.png" alt="Image 2">
+      <img src="img/Il caffè di notte/Screenshot 2024-04-08 alle 17.55.11.png" alt="Image 3">
+      <img src="img/Il caffè di notte/Screenshot 2024-04-08 alle 17.55.28.png" alt="Image 3">
+      <img src="img/Il caffè di notte/Screenshot 2024-04-08 alle 17.56.09.png" alt="Image 1">
+      <img src="img/Il caffè di notte/Screenshot 2024-04-08 alle 17.56.38.png" alt="Image 1">
+      <img src="img/Il caffè di notte/Screenshot 2024-04-08 alle 17.56.51.png" alt="Image 1">
+      <img src="img/Il caffè di notte/Screenshot 2024-04-08 alle 17.57.10.png" alt="Image 1">
+
+    </div>
+    <div class="container-center-text">
+        <p>In una stanza soleggiata, una donna dormiva profondamente sulla poltrona. Al suo collo una collana di perle che si muoveva al ritmo del suo respiro, ma solo un occhio più attento poteva notare qualcosa di strano nel gioiello.
+            Una delle perle, troppo stretta tra le sue sorelle, si guardava attorno con curiosità sognando di uscire da quella prigione. <br>Ad un tratto vide di fronte a sé un ricordo, un sogno che sembrava perduto: la sua casa. <br>Iniziò a tirare, sempre più forte, finché la collana si ruppe e tutte le perle volarono nella stanza. Con grandi salti la coraggiosa perla si avvicinò sempre di più alla metà, fino a quando BAM si scontrò con il quadro appeso al muro.
+            La perla cadde a terra, le sue convinzioni crollarono, e la donna che ormai si era svegliata la raccolse per rimetterla al suo posto nella collana.</p>
+    </div>
+    <div class="divisore"></div>
+
+    <h2 class="section-title">Animazione</h2>
+    <div class="container-center-text">
+      <p>Per aggiungere un tocco di magia alla campagna, tutte le immagini utilizzate sono state generate dall'Intelligenza Artificiale e post-prodotte per incarnare al meglio l'essenza delle infinite possibilità che offre la tecnologia. </p>
+    </div>
+    <div class="project-images" id="images">
+      <img  src="img/Il caffè di notte/caffe-blender.gif" alt="Image 2">
+      <img src="img/Il caffè di notte/caf-bl-2.png" alt="">
+      <img  src="img/Il caffè di notte/caffe-bl2.gif" alt="Image 2">
+    </div>
+    <div class="container-center-text ">
+      <p style="color:dimgray; margin-top: 20px;"> 
+      Progetto realizzato da: <br>
+      Martina Limata, Federico Natanael Lovotrico, Reinald Joseph Mendoza, Filippo Morelli, Elisa Pigella, Martina Maria Presti.
+  </p>
+  </div>
+    <button class="collapsible-button" onclick="closeCollapsible('collapsibleContent2')">Chiudi</button>
+    <!-- non sta funzionando -->
+     
+
+    
+  </div>
+</div>
+</div>
+
+<div class="divisore-gradient-text-small"></div>
+
+<!-- noemi -->
+<div class="portfolio-section">
+  <div class="section-content">
+    <video class="project-video" controls>
+      <source src="img/noemi/noemi.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="project-text">
+    <h2 class="section-title">Feelings</h2>
+      <p> Senza le emozioni, l'uomo è incompleto: non conosce se stesso e non sa conoscere il mondo.
+        Questo progetto costituisce un esercizio di stile per comunicare in modo efficace l'espressività dei personaggi.
+        Senza suono, le emozioni sono descritte attraverso sfumature di colore e attraverso l'effetto che hanno sul personaggio.
+      </p>
+        <button class="collapsible-button" onclick="toggleCollapsible('collapsibleContent3')"> Altro</button>
+      </div>
+</div>
+<div class="collapsible-container" id="collapsibleContent2">
+  <div class="collapsible-content">
+  <div class="project-images" id="images">
+      <img src="img/noemi/Screenshot 2024-04-08 alle 22.56.22.png" alt="Image 2">
+      <img src="img/noemi/Screenshot 2024-04-08 alle 22.57.08.png" alt="">
+      <img src="img/noemi/Screenshot 2024-04-08 alle 22.58.07.png" alt="Image 2">
+      <img src="img/noemi/Screenshot 2024-04-08 alle 22.58.50.png" alt="Image 2">
+      <img src="img/noemi/Screenshot 2024-04-08 alle 22.59.18.png" alt="Image 2">
+      <img src="img/noemi/Screenshot 2024-04-08 alle 23.00.26.png" alt="Image 2">
+    </div>
+    <h2 class="section-title">Animazione</h2>
+    <div class="container-center-text">
+      <p>L'elemento centrale del progetto è il personaggio, che cambia camminata a seconda di come interagisce
+        con le emozioni, esseri animati raffigurati come piccole fiamme. Il personaggio è molto semplice, per
+        lasciare
+      </p>
+  </div>
+
+    <button class="collapsible-button" onclick="closeCollapsible('collapsibleContent3')">Chiudi</button>
+    <!-- non sta funzionando -->
+
+  </div>
+</div>
+</div>
+
+<div class="divisore-gradient-text-small"></div>
+
+<!-- forchetta -->
+<div class="portfolio-section">
+  <div class="section-content">
+    <video class="project-video" controls>
+      <source src="img/La forchetta/Video_finale_monica.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="project-text">
+    <h2 class="section-title">Fork</h2>
+      <p> Ci sono oggetti della nostra vita quotidiana che sono sempre stati lì e nessuno si chiede più da dove vengono,
+        o chi li abbia inventati e usati per la prima volta. 
+        Questo progetto vuole raccontare in maniera creativa l'invenzione di un utensile molto comune: la forchetta. 
+        E se non fosse sempre stata immaginata con la funzione che ha oggi?  E se fosse stato solo un caso?        
+      </p>
+        <button class="collapsible-button" onclick="toggleCollapsible('collapsibleContent3')"> Altro</button>
+      </div>
+</div>
+<div class="collapsible-container" id="collapsibleContent2">
+  <div class="collapsible-content">
+  <div class="project-images" id="images">
+    <img src="img/La forchetta/Screenshot 2024-04-08 alle 17.49.34.png">
+    <img src="img/La forchetta/Screenshot 2024-04-08 alle 17.49.51.png ">
+    <img src="img/La forchetta/Screenshot 2024-04-08 alle 17.50.12.png ">
+    <img src="img/La forchetta/Screenshot 2024-04-08 alle 17.50.33.png ">
+    <img src="img/La forchetta/Screenshot 2024-04-08 alle 17.50.49.png ">
+    <img src="img/La forchetta/Screenshot 2024-04-08 alle 17.51.18.png ">
+    </div>
+
+    <h2 class="section-title">Animazione</h2>
+    <div class="container-center-text">
+      <p> La folla è stata realizzata con Node Geometry, che comprende una serie di animazioni del corpo associate in modo random ai diversi punti del sistema. In questo modo, si ottiene una folla il più possibile varia e credibile.
+      </p>
+  </div>
+<div class="project-images" id="images">
+    <img src="img/La forchetta/fork.gif">
+    <img src="img/La forchetta/fork_3.gif">
+    <img src="img/La forchetta/fork-2.gif">
+    <img src="img/La forchetta/Screenshot 2024-04-11 alle 09.20.42.png">
+    </div>
+    <button class="collapsible-button" onclick="closeCollapsible('collapsibleContent3')">Chiudi</button>
+    <!-- non sta funzionando -->
+
+  </div>
+</div>
+</div>
+
+<div class="divisore-gradient-text-small"></div>
+
+<!-- maschera -->
+<div class="portfolio-section">
+  <div class="section-content">
+    <video class="project-video" controls>
+      <source src="img/maschera/maschera.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="project-text">
+    <h2 class="section-title">La maschera</h2>
+      <p>Ognuno di noi indossa ogni giorno una maschera.  
+        
+      </p>
+        <button class="collapsible-button" onclick="toggleCollapsible('collapsibleContent3')"> Altro</button>
+      </div>
+</div>
+<div class="collapsible-container" id="collapsibleContent2">
+  <div class="collapsible-content">
+  <div class="project-images" id="images">
+    <img src="img/maschera/Screenshot 2024-04-11 alle 09.24.14.png">
+    <img src="img/maschera/Screenshot 2024-04-11 alle 09.24.41.png ">
+    <img src="img/maschera/Screenshot 2024-04-11 alle 09.25.15.png">
+    <img src="img/maschera/Screenshot 2024-04-11 alle 09.25.32.png">
+    <img src="img/maschera/Screenshot 2024-04-11 alle 09.26.00.png">
+    <img src="img/maschera/Screenshot 2024-04-11 alle 09.26.30.png ">
+    </div>
+
+    <h2 class="section-title">Animazione</h2>
+    <div class="container-center-text">
+      <p> La folla è stata realizzata con Node Geometry, che comprende una serie di animazioni del corpo associate in modo random ai diversi punti del sistema. In questo modo, si ottiene una folla il più possibile varia e credibile.
+      </p>
+  </div>
+<div class="project-images" id="images">
+    <img src="img/La forchetta/fork.gif">
+    <img src="img/La forchetta/fork_3.gif">
+    <img src="img/La forchetta/fork-2.gif">
+    <img src="img/La forchetta/Screenshot 2024-04-11 alle 09.20.42.png">
+    </div>
+    <button class="collapsible-button" onclick="closeCollapsible('collapsibleContent3')">Chiudi</button>
+    <!-- non sta funzionando -->
+
+  </div>
+</div>
+</div>
+
+
+<!-- JavaScript -->
+<script>
+  function toggleCollapsible(id) {
+    var content = document.getElementById(id);
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  }
+
+  function closeCollapsible(id) {
+    var content = document.getElementById(id);
+    content.style.display = "none";
+  }
+</script>
+
+
+
+</body>
+</html>
